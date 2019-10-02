@@ -1,0 +1,19 @@
+{
+  "name": "frontend-js-training",
+  "version": "1.0.0",
+  "description": "The repos is of Landofcoder team, the repo is used to store all samples code for reactjs, html, css, javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landofcoder/frontend-js-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landofcoder/frontend-js-training/issues"
+  },
+  "homepage": "https://github.com/landofcoder/frontend-js-training#readme"
+}

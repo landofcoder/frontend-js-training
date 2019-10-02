@@ -1,18 +1,18 @@
 $defaultcolor: #464646;
 $lightcolor: #af9e9e;
 $textcolor: rgb(177,168,50);
-#Footer {
+.Footer {
     text-align: -webkit-center;
     width: 100%;
     height: 50px;
     color: $lightcolor;
     background-color: $defaultcolor;
-}
-#copyright {
-    float:left;
-    width: 65%;
-}
-#ostemplate {
-    float:right;
-    width: 35%;
+    .copyright {
+        float:left;
+        width: 65%;
+    }
+    .ostemplate {
+        float:right;
+        width: 35%;
+    }
 }

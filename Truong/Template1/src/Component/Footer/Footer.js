@@ -3,12 +3,12 @@ import './Footer.scss';
 class Footer extends Component {
     render() {
         return (
-            <div id="Footer">
-                <div id="marginfooter">
-                    <div id="copyright">
+            <div className="Footer">
+                <div className="marginfooter">
+                    <div className="copyright">
                         <p>Copyright © 2009 - 2019 - All Rights Reserved - Domain Name</p>
                     </div>
-                    <div id="ostemplate">
+                    <div className="ostemplate">
                         <p>Template by OS Templates</p>
                     </div>
                 </div>

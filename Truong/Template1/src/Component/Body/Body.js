@@ -3,10 +3,10 @@ import './Body.scss';
 class Body extends Component {
     render() {
         return (
-            <div id="body">
-                <div id="marginbody">
-                    <div id="bodyfirst">
-                        <div id="bodyleft">
+            <div className="body">
+                <div className="marginbody">
+                    <div className="bodyfirst">
+                        <div className="bodyleft">
                             <h1>Eu justo augue esta</h1>
                             <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices
                                 quis
@@ -14,14 +14,14 @@ class Body extends Component {
                                 pellentum
                                 leo.</p>
                         </div>
-                        <div id="bodyright">
+                        <div className="bodyright">
                             <h1>630 x 300 px</h1>
                         </div>
                         <div className="clearboth"></div>
                     </div>
 
-                    <div id="bodysecond">
-                        <div id="bodysecond-left">
+                    <div className="bodysecond">
+                        <div className="bodysecond-left">
                             <h3>Lorum ipsum dolor</h3>
                             <p>This is a W3C standards compliant free HTML5 ibsite template from OS Template. This template is
                                 distributed using a website template licence.</p>
@@ -29,16 +29,16 @@ class Body extends Component {
                                 copyright information and credit links in the template and associated files. For more HTML5
                                 templates visit free website templates.</p>
                         </div>
-                        <div id="bodysecond-right">
-                            <div id="listimage">
-                                <div id="imageleft" class="imagediv">
+                        <div className="bodysecond-right">
+                            <div className="listimage">
+                                <div className="imageleft imagediv">
                                     <h1>Image 1</h1>
                                 </div>
-                                <div id="imageright">
-                                    <div id="imagerightleft" class="imagediv">
+                                <div className="imageright">
+                                    <div className="imagerightleft imagediv">
                                         <h1>Image 2</h1>
                                     </div>
-                                    <div id="imagerightright" class="imagediv" >
+                                    <div className="imagerightright imagediv" >
                                         <h1>Image 3</h1>
                                     </div>
                                     <div className="clearboth"></div>
@@ -50,27 +50,27 @@ class Body extends Component {
                             </div>
                         </div>
                         <div className="clearboth"></div>
-                        <div id="spacebody"></div>
-                        <hr id="fullhr"/>
-                        <div id="bodythrid">
-                            <div id="leftbodythird">
-                                <div id="fromtheblog">
+                        <div className="spacebody"></div>
+                        <hr className="fullhr"/>
+                        <div className="bodythird">
+                            <div className="leftbodythird">
+                                <div className="fromtheblog">
                                     <h2><i>FROM THE BLOG</i></h2>
                                     <h4>
                                         Post Title
                                     </h4>
                                     <p>Admin, domainname.com</p>
-                                    <p>Friday, 6th April 2000</p>
+                                    <p>FrclassNameay, 6th April 2000</p>
                                     <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
                                         imperdiet.</p>
                                 </div>
-                                <div id="quicklink" >
+                                <div className="quicklink" >
                                     <h2>QUICK LINK</h2>
                                     <a href="#root">Lorem ipsum dolor sit</a>
                                     <hr/>
                                     <a href="#root">Amet consectetur</a>
                                     <hr/>
-                                    <a href="#root">Praesent vel sem id</a>
+                                    <a href="#root">Praesent vel sem className</a>
                                     <hr/>
                                     <a href="#root">Curabitur hendrerit est</a>
                                     <hr/>
@@ -78,19 +78,19 @@ class Body extends Component {
                                     <hr/>
                                 </div>
                             </div>
-                            <div id="aboutus">
+                            <div className="aboutus">
                                 <h2>About US</h2>
-                                <div id="aboutusleft">
+                                <div className="aboutusleft">
                                     <div class="imagediv"></div>
                                 </div>
-                                <div id="aboutusright">
-                                    <p>Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a
+                                <div className="aboutusright">
+                                    <p>Nam nec ante. Sed lacinia, urna non tincclassNameunt mattis, tortor neque adipiscing diam, a
                                         cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc
                                         feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
                                         Suspendisse in justo eu magna luctus suscipit.</p>
                                 </div>
                                 <div className="clearboth"></div>
-                                <div id="aboutusendmore">
+                                <div className="aboutusendmore">
                                     <a href="#root" className="linkcolor">Read more</a>
                                 </div>
                             </div>

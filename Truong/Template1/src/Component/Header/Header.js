@@ -3,14 +3,14 @@ import './Header.scss'
 class Header extends Component {
     render() {
         return (
-          <div id="header">
-            <div id="margin-header">
-                <div id="divheader-left">
+          <div className="header">
+            <div className="margin-header">
+                <div className="divheader-left">
                     <h1>Basic 90</h1>
                     <p>Free HTML5 Website Template</p>
                 </div>
-                <div id="divheader-right">
-                    <div id="spaceheader-right"></div>
+                <div className="divheader-right">
+                    <div className="spaceheader-right"></div>
                     <input type="text" placeholder="Seach our Website"/>
                     <input type="submit"/>
                 </div>

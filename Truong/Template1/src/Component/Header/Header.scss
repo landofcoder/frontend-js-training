@@ -1,11 +1,5 @@
 $lightcolor: #af9e9e;
-.clearboth{
-    clear:both;
-}
-th {
-    padding: 10px;
-}
-#header{
+.header{
     width: 100%;
     background-color: rgb(58,49,49);
     margin: 0 auto;
@@ -14,28 +8,34 @@ th {
         text-decoration: none;
         color: $lightcolor;
     }
-}
-#margin-header {
-    width:60%;
-    text-align: left;
-}
-#divheader-left {
-    float: left;
-    width: 50%;
-    h1 {
-        color: #af9e9e;
+    .margin-header {
+        width:60%;
+        text-align: left;
+        .clearboth{
+            clear:both;
+        }
+        .divheader-left {
+            float: left;
+            width: 50%;
+            h1 {
+                color: $lightcolor;
+            }
+            p {
+                color: $lightcolor;
+            }
+        }
+        .divheader-right {
+            float:right;
+            width: 30%;
+            .spaceheader-right {
+                height: 100px;
+            }
+            .inputsearch {
+                width: 200px;
+            }
+        }
+        th {
+            padding: 10px;
+        }
     }
-    p {
-        color: #af9e9e;
-    }
-}
-#divheader-right {
-    float:right;
-    width: 30%;
-}
-#spaceheader-right {
-    height: 100px;
-}
-#inputsearch {
-    width: 200px;
 }

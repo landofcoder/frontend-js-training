@@ -50,52 +50,50 @@ class Body extends Component {
                             </div>
                         </div>
                         <div className="clearboth"></div>
-                        <div className="spacebody"></div>
-                        <hr className="fullhr"/>
-                        <div className="bodythird">
-                            <div className="leftbodythird">
-                                <div className="fromtheblog">
-                                    <h2><i>FROM THE BLOG</i></h2>
-                                    <h4>
-                                        Post Title
-                                    </h4>
-                                    <p>Admin, domainname.com</p>
-                                    <p>FrclassNameay, 6th April 2000</p>
-                                    <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
-                                        imperdiet.</p>
-                                </div>
-                                <div className="quicklink" >
-                                    <h2>QUICK LINK</h2>
-                                    <a href="#root">Lorem ipsum dolor sit</a>
-                                    <hr/>
-                                    <a href="#root">Amet consectetur</a>
-                                    <hr/>
-                                    <a href="#root">Praesent vel sem className</a>
-                                    <hr/>
-                                    <a href="#root">Curabitur hendrerit est</a>
-                                    <hr/>
-                                    <a href="#root">Sed a nulla urna</a>
-                                    <hr/>
-                                </div>
+                    </div>
+                    <div className="spacebody"></div>
+                    <hr className="fullhr"/>
+                    <div className="bodythird">
+                        <div className="fromtheblog">
+                            <h2><i>FROM THE BLOG</i></h2>
+                            <h4>
+                                Post Title
+                            </h4>
+                            <p>Admin, domainname.com</p>
+                            <p>FrclassNameay, 6th April 2000</p>
+                            <p>Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat
+                                imperdiet.</p>
+                        </div>
+                        <div className="quicklink" >
+                            <h2>QUICK LINK</h2>
+                            <a href="#root">Lorem ipsum dolor sit</a>
+                            <hr/>
+                            <a href="#root">Amet consectetur</a>
+                            <hr/>
+                            <a href="#root">Praesent vel sem className</a>
+                            <hr/>
+                            <a href="#root">Curabitur hendrerit est</a>
+                            <hr/>
+                            <a href="#root">Sed a nulla urna</a>
+                            <hr/>
+                        </div>
+                        <div className="aboutus">
+                            <h2>About US</h2>
+                            <div className="aboutusleft">
+                                <div class="imagediv"></div>
                             </div>
-                            <div className="aboutus">
-                                <h2>About US</h2>
-                                <div className="aboutusleft">
-                                    <div class="imagediv"></div>
-                                </div>
-                                <div className="aboutusright">
-                                    <p>Nam nec ante. Sed lacinia, urna non tincclassNameunt mattis, tortor neque adipiscing diam, a
-                                        cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc
-                                        feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
-                                        Suspendisse in justo eu magna luctus suscipit.</p>
-                                </div>
-                                <div className="clearboth"></div>
-                                <div className="aboutusendmore">
-                                    <a href="#root" className="linkcolor">Read more</a>
-                                </div>
+                            <div className="aboutusright">
+                                <p>Nam nec ante. Sed lacinia, urna non tincclassNameunt mattis, tortor neque adipiscing diam, a
+                                    cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc
+                                    feugiat mi a tellus consequat imperdiet. Vestibulum sapien. Proin quam. Etiam ultrices.
+                                    Suspendisse in justo eu magna luctus suscipit.</p>
                             </div>
                             <div className="clearboth"></div>
+                            <div className="aboutusendmore">
+                                <a href="#root" className="linkcolor">Read more</a>
+                            </div>
                         </div>
+                        <div className="clearboth"></div>
                     </div>
                 </div>
                 <div className="clearboth"></div>

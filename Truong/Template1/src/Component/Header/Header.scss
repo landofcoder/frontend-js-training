@@ -9,31 +9,46 @@ $lightcolor: #af9e9e;
         color: $lightcolor;
     }
     .margin-header {
-        width:60%;
+        .blockheader{
+            display: flex;
+            .divheader-left {
+                width: 50%;
+                h1 {
+                    color: $lightcolor;
+                }
+                p {
+                    color: $lightcolor;
+                }
+            }
+            .divheader-right {
+                width: 50%;
+                .spaceheader-right {
+                    height: 100px;
+                }
+                .blockinput{
+                    text-align: end;
+                    .inputsearch {
+                        width: 200px;
+                    }
+                    input {
+                        height: 20px;
+                    }
+                    .submitbutton {
+                        height: 26px;
+                        background: rgb(2,0,36);
+                        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,242,1) 0%, rgba(20,215,157,1) 40%, rgba(255,235,0,1) 100%);
+                        
+                    }
+                }
+            }
+        }
+        width:1100px;
         text-align: left;
-        .clearboth{
-            clear:both;
+        
+        .spacediv{
+            width: 20%;
         }
-        .divheader-left {
-            float: left;
-            width: 50%;
-            h1 {
-                color: $lightcolor;
-            }
-            p {
-                color: $lightcolor;
-            }
-        }
-        .divheader-right {
-            float:right;
-            width: 30%;
-            .spaceheader-right {
-                height: 100px;
-            }
-            .inputsearch {
-                width: 200px;
-            }
-        }
+        
         th {
             padding: 10px;
         }

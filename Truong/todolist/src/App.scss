@@ -1,0 +1,26 @@
+
+.body{
+    .spacebody{
+        height: 300px;
+    }
+    .marginbody{
+        width: 50%;
+        .bgform{
+            .setwidth{
+                width: 50%;
+            }
+        }
+        .spaceinput{
+            height: 50px;
+        }
+    }
+
+    li {
+        text-align: left;
+    }
+    li:hover li{
+        background-color: blue;
+    } 
+    width: 100%;
+    text-align: -webkit-center;
+}

@@ -1,22 +1,29 @@
 
 .body{
     .spacebody{
-        height: 300px;
+        height: 200px;
     }
-    .marginbody{
-        width: 50%;
-        .bgform{
-            .setwidth{
-                width: 50%;
+    .border {
+        .link {
+            font-size: 35px;
+            margin: 10px;
+        }
+        .marginbody{
+            padding: 100px;
+            width: 50%;
+            .bgform{
+                .setwidth{
+                    width: 50%;
+                }
             }
-        }
-        .spaceinput{
-            height: 50px;
-        }
-        .list-group{
-            .liclass{
-                .close{
-                    background-color: white;
+            .spaceinput{
+                height: 50px;
+            }
+            .list-group{
+                .liclass{
+                    .close{
+                        background-color: white;
+                    }
                 }
             }
         }

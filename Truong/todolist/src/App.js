@@ -8,31 +8,41 @@ const p = {
   value: "Truong PHKT"
 }
 detais.push(p);
-var templatecache = {
-  detail: 0,
-  value: ""
-};
 var cache = {
   detail: 0,
   value: ""
 };
+class List extends React.Component {
+  constructor(props){
+    super(props);
+    console.log(this.props);
+    console.log("Run List");
+    this.willdel = this.willdel.bind(this);
+  }
+  willdel = (event) => {
+    console.log("run willdel");
+    this.props.remove(this.props.detail);
+  }
+  render(){
+    return(
+      <li className="liclass list-group-item list-group-item-action">{this.props.detail}.  {this.props.value}
+        <button onClick={this.willdel} type="button" className="close" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </li>
+    )
+  }
+}
 class Showlist extends React.Component {
   constructor(props){
     super(props);
     console.log("Run Showlist");
-    this.willdel = this.willdel.bind(this);
-  }
-  willdel(event){
-    
   }
   render() {
     var showlistcache = detais.map(i =>{
       return (
-        <li className="list-group-item list-group-item-action">{i.detail}.  {i.value}
-          <button onclick={this.willdel} type="button" className="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </li>
+        <List remove={this.props.remove} detail={i.detail} value={i.value}>
+        </List>
       );
     });
     return showlistcache;
@@ -53,7 +63,6 @@ class Forminputlist extends React.Component {
   }
   onSubmit(event){
     event.preventDefault();
-    console.log(cache.value);
     if(cache.value){
       console.log("Add okie");
       this.props.addItem({cache});
@@ -77,7 +86,6 @@ class FORM extends Component {
   constructor(props){
     super(props);
     this.state = {detail: detais}
-    console.log(this.addItem.bind(this));
     this.addItem = this.addItem.bind(this);
     console.log("chay Form");
   }
@@ -91,17 +99,21 @@ class FORM extends Component {
     }
     this.setState({detail: detais});
   }
-  remove(event){
+  remove = (event) =>{
     var comparedel = event;
-    console.log(event);
-    detais.splice(comparedel.detail,1);
+    console.log("Da kiem xoa : " + comparedel);
+    detais.splice(detais.length- comparedel,1);
+    for(var i = 0 ; i < detais.length; i ++)
+    {
+      console.log(detais[i].detail);
+    }
     this.setState({detail: detais});
   }
   render() {
     return (
       <div className="marginbody">
-        <ul class="list-group">
-          <Showlist remove={this.remove} />
+        <ul className="list-group">
+          <Showlist remove={this.remove} className="showlist" remove={this.remove} />
         </ul>
         <div className="spaceinput"></div>
         <Forminputlist addItem = {this.addItem} />

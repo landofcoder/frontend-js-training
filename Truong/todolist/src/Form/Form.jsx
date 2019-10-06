@@ -28,16 +28,6 @@ export class INPUT extends Component {
         }
         this.setState({detail: detais});
     }
-    remove = (event) =>{
-        var comparedel = event;
-        console.log("Da kiem xoa : " + comparedel);
-        detais.splice(detais.length- comparedel,1);
-        for(var i = 0 ; i < detais.length; i ++)
-        {
-        console.log(detais[i].detail);
-        }
-        this.setState({detail: detais});
-    }
     render() {
         return (
         <div className="marginbody">
@@ -49,75 +39,27 @@ export class INPUT extends Component {
 export class FORMNOINPUT extends Component {
     constructor(props){
         super(props);
-        this.state = {detail: detais}
-        this.addItem = this.addItem.bind(this);
+        this.state = {detail: detais};
+        this.remove = this.remove.bind(this);
         console.log("chay Form");
     }
-    addItem(detaill){
-        if(detaill.cache.value){
-        detais.unshift(detaill.cache);
-        }
-        else
-        {
-        console.log("khong the them ??");
-        }
-        this.setState({detail: detais});
-    }
-    remove = (event) =>{
+    remove=(event)=>{
         var comparedel = event;
-        console.log("Da kiem xoa : " + comparedel);
+        console.log("Da kiem xoa : " + comparedel+ "  xoa o vi tri :"+ (detais.length-comparedel));
         detais.splice(detais.length- comparedel,1);
-        for(var i = 0 ; i < detais.length; i ++)
-        {
-        console.log(detais[i].detail);
-        }
+        detais.map((i,index)=>{
+            i.detail = detais.length -index;
+            console.log("index :" +index);
+        })
+        console.log(detais);
         this.setState({detail: detais});
     }
     render() {
         return (
         <div className="marginbody">
             <ul className="list-group">
-            <Showlist remove={this.remove} className="showlist" remove={this.remove} />
+            <Showlist remove={this.remove} className="showlist" />
             </ul>
-        </div>
-        )
-    }
-}
-export default class FORM extends Component {
-    constructor(props){
-        super(props);
-        this.state = {detail: detais}
-        this.addItem = this.addItem.bind(this);
-        console.log("chay Form");
-    }
-    addItem(detaill){
-        if(detaill.cache.value){
-        detais.unshift(detaill.cache);
-        }
-        else
-        {
-        console.log("khong the them ??");
-        }
-        this.setState({detail: detais});
-    }
-    remove = (event) =>{
-        var comparedel = event;
-        console.log("Da kiem xoa : " + comparedel);
-        detais.splice(detais.length- comparedel,1);
-        for(var i = 0 ; i < detais.length; i ++)
-        {
-        console.log(detais[i].detail);
-        }
-        this.setState({detail: detais});
-    }
-    render() {
-        return (
-        <div className="marginbody">
-            <ul className="list-group">
-            <Showlist remove={this.remove} className="showlist" remove={this.remove} />
-            </ul>
-            <div className="spaceinput"></div>
-            <Forminputlist addItem = {this.addItem} />
         </div>
         )
     }

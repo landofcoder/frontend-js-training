@@ -7,8 +7,7 @@ export default class Showlist extends React.Component {
       console.log("Run Showlist");
     }
     render() {
-      console.log("show list test ??");
-      console.log(detais);
+      console.log("show list");
       var showlistcache = detais.map(i =>{
         return (
           <List remove={this.props.remove} detail={i.detail} value={i.value}>

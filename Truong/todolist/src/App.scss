@@ -1,4 +1,13 @@
 
+.switch-wrapper {
+  position: relative;
+  width: 100%;
+}
+ 
+.switch-wrapper > div {
+  position: absolute;
+  width: 100%;
+}
 .body{
     .spacebody{
         height: 200px;

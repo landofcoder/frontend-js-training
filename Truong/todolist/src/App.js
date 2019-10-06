@@ -4,6 +4,7 @@ import {INPUT} from './Form/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import {FORMNOINPUT} from './Form/Form';
+import { AnimatedSwitch } from 'react-router-transition';
 function App() {
   return (
     <div className="body">
@@ -12,12 +13,14 @@ function App() {
           <Router>
             <Link className="link btn btn-link" to="/menu">List</Link>
             <Link className="link btn btn-link" to="/">Detail</Link>
-            <Route exact path="/">
-              <INPUT />
-            </Route>
-            <Route exact path="/menu">
-              <FORMNOINPUT />
-            </Route>
+            <AnimatedSwitch atEnter={{ opacity: 0 }} atLeave={{ opacity: 0 }} atActive={{ opacity: 1 }} className="switch-wrapper">
+              <Route exact path="/">
+                <INPUT />
+              </Route>
+              <Route exact path="/menu">
+                <FORMNOINPUT />
+              </Route>
+            </AnimatedSwitch>
           </Router>
         </div>
     </div>

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import {FORMNOINPUT} from './Form/Form';
 import { AnimatedSwitch } from 'react-router-transition';
+
 class Main extends React.Component {
   constructor(props){
     super(props);

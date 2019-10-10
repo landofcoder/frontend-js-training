@@ -1,17 +1,21 @@
 import React,{Component} from 'react';
 import INTRO from './intro/Intro';
+import {Provider} from 'react-redux';
 import Main from './Main';
-export var isloading = true;
+import Storelist from './store/Storelist';
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = ({isloading: true});
     }
     componentDidMount(){
-        setTimeout(()=>this.setState({isloading: false}),1000);
+        setTimeout(()=>{this.props.offloading()},1000);
+        console.log("status is loading state" +this.props.statusloading);
     }
+
     render(){
-        return(this.state.isloading?<INTRO />:<Main />)
+        return(
+            this.props.statusloading?<INTRO />:<Provider store={Storelist} ><Main /></Provider>
+        )
     }
 }
 export default App;

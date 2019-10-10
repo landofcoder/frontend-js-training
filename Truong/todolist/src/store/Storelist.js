@@ -4,6 +4,13 @@ var objectlist = [{
   date: new Date(),
   detail: 1
 }];
+function arrayRemove(arr, value) {
+
+   return arr.filter(function(ele){
+       return ele.name != value;
+   });
+
+}
 function list(state = objectlist,action){
   switch(action.type){
     case 'create':
@@ -19,8 +26,10 @@ function list(state = objectlist,action){
       })
 
       // solve same name
-      state.unshift(K);
-      return state;
+      return [
+        ...state,
+        K
+      ]
     case 'delete':
       let pos;
       state.find((value,index)=>{
@@ -30,14 +39,17 @@ function list(state = objectlist,action){
       })
       console.log("delete");
       console.log("name" + action.name);
-      console.log(pos);
-      if(pos || pos == 0 )
-        state.splice(pos,1);
-      return state;
+      var S = undefined;
+      let G = state.splice(pos,1);
+      console.log("g: ");
+      console.log(G);
+      console.log("state");
+      console.log(state);
+      return arrayRemove(state,action.name);
     default:
       console.log("something when wrong with case state");
       return state;
   }
 };
-let Storelist = createStore(list);
+const Storelist = createStore(list);
 export default Storelist;

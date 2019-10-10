@@ -3,6 +3,7 @@ import INTRO from './intro/Intro';
 import {Provider} from 'react-redux';
 import Main from './Main';
 import Storelist from './store/Storelist';
+import {render} from 'react-dom';
 class App extends Component {
     constructor(props){
         super(props);

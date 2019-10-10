@@ -1,7 +1,5 @@
 import React from 'react';
-import {detais} from '../Form';
 import List from './List/List';
-import {connect} from 'react-redux';
 
 
 // const mapStateToProps = (state) =>({

@@ -12,26 +12,10 @@ export var cache = {
   value: ""
 };
 export class INPUT extends Component {
-    constructor(props){
-        super(props);
-        this.state = {detail: detais,cacheadd: ""}
-        this.addItem = this.addItem.bind(this);
-        console.log("chay Form");
-    }
-    addItem(detaill){
-        if(detaill.cache.value){
-        detais.unshift(detaill.cache);
-        }
-        else
-        {
-        console.log("khong the them ??");
-        }
-        this.setState({detail: detais});
-    }
     render() {
         return (
         <div className="marginbody">
-            <Forminputlist addItem = {this.addItem} />
+            <Forminputlist />
         </div>
         )
     }

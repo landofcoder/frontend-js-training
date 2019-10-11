@@ -5,13 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 import {FORMNOINPUT} from './Form/Form';
 import { AnimatedSwitch } from 'react-router-transition';
-class Main extends React.Component {
-  constructor(props){
-    super(props);
-  }
-  render(){
-    return (
-      <div className="body">
+const Main = ()=>(
+  <div className="body">
           <div className="spacebody"></div>
           <div className="border">
             <Router>
@@ -28,8 +23,6 @@ class Main extends React.Component {
             </Router>
           </div>
       </div>
-    );
-  }
-}
+)
 
 export default Main;

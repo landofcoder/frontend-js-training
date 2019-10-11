@@ -1,0 +1,48 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.13.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/php5/bin:/Volumes/Data/google-cloud-sdk/bin:/usr/local/php5/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/share/dotnet:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/vuchien/sites/frontend-js-training/node_modules/.bin:/Users/vuchien/.composer/vendor/bin
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.15.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/vuchien/sites/frontend-js-training/package.json: Unexpected token : in JSON at position 9
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:304:30)
+      at /usr/local/Cellar/yarn/1.13.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  "name": "frontend-js-training",
+    "version": "1.0.0",
+    "description": "The repos is of Landofcoder team, the repo is used to store all samples code for reactjs, html, css, javascript",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/landofcoder/frontend-js-training.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/landofcoder/frontend-js-training/issues"
+    },
+    "homepage": "https://github.com/landofcoder/frontend-js-training#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

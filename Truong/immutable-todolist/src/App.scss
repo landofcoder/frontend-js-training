@@ -1,0 +1,53 @@
+
+.switch-wrapper {
+    position: relative;
+    width: 100%;
+  }
+   
+  .switch-wrapper > div {
+    position: absolute;
+    width: 100%;
+  }
+  .intro{
+      margin-left: 48%;
+      margin-top: 22%;
+  }
+  .body{
+      .spacebody{
+          height: 200px;
+      }
+      .border {
+          .link {
+              font-size: 35px;
+              margin: 10px;
+          }
+          .marginbody{
+              padding: 100px;
+              width: 50%;
+              .bgform{
+                  .setwidth{
+                      width: 50%;
+                  }
+              }
+              .spaceinput{
+                  height: 50px;
+              }
+              .list-group{
+                  .liclass{
+                      .close{
+                          background-color: white;
+                      }
+                  }
+              }
+          }
+      }
+  
+      li {
+          text-align: left;
+      }
+      li:hover li{
+          background-color: blue;
+      } 
+      width: 100%;
+      text-align: -webkit-center;
+  }

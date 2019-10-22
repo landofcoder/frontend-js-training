@@ -1,5 +1,3 @@
-export const SUM_CALC = 'SUM_CALC';
-export const CHANGE_NUMBER_A_PASSWORD = 'CHANGE_NUMBER_A_PASSWORD';
-export const CHANGE_NUMBER_B_PASSWORD = 'CHANGE_NUMBER_B_PASSWORD';
 export const ADD = "ADD_LIST";
 export const DELETE = "DELETE_LIST";
+export const isloading = "CHANGE_LOADING"

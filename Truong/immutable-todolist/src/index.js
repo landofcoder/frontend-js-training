@@ -5,9 +5,7 @@ import { ConnectedRouter } from "connected-react-router/immutable";
 import configureStore, { history } from "./stores";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-
 const store = configureStore(/* provide initial state if any */);
-
 ReactDOM.render(
     <Provider store={store}>
         <ConnectedRouter history={history}>

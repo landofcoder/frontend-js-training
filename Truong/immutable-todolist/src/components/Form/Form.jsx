@@ -11,11 +11,6 @@ export class INPUT extends Component {
     }
 }
 export class FORMNOINPUT extends Component {
-    constructor(props){
-        super(props);
-        this.state = {detail: detais};
-        this.remove = this.remove.bind(this);
-    }
     render() {
         return (
         <div className="marginbody">

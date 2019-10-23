@@ -19,3 +19,9 @@ export function changeNumberBPassword(payload) {
         payload
     }
 }
+
+export function getApiList() {
+    return {
+        type: types.GET_API_LIST
+    }
+}

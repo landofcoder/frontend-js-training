@@ -1,36 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addToListSync } from '../../../actions/main-action'
-const mapStateToProps = state => ({
-    getLength: state.getIn(['mainReducer', 'example2']).size + 1
-})
+class FromInputList extends Component {
+    constructor(props) {
+        super(props);
+        this.submitEvent.bind(this);
+        this.getInputValue.bind(this);
+    }
+    submitEvent = (event) => {
+        event.preventDefault();
+        this.props.addToListSync({
+            name: this.input.value,
+            //index: this.props.getLength
+        });
+        this.input.value = '';
+    }
+    getInputValue = (event) => {
+        this.input = event;
+    }
+    render() {
+        return (
+            <form className="bgform" onSubmit={this.submitEvent}>
+                <div className="input-group input-group-lg setwidth">
+                    <input ref={this.getInputValue} placeholder="Enter value" check="checktome" type="text" className="input form-control" aria-label="" aria-describedby="inputGroup-sizing-sm" />
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </form>
+        );
+    }
+}
 const mapDispatchToProps = (dispatch) => ({
     addToListSync: i => {
-        return dispatch(addToListSync(i))
+        return dispatch(addToListSync(i));
     }
 })
-const FromInputList = ({ getLength, addToListSync }) => {
-    let input;
-    return (
-        <form className="bgform" onSubmit={
-            e => {
-                e.preventDefault();
-                addToListSync({
-                    name: input.value,
-                    index: getLength
-                });
-                input.value = '';
-            }}>
-            <div className="Input-group Input-group-lg setwidth">
-                <input ref={i => { input = i }} placeholder="Enter value" check="checktome" type="text" className="input form-control" aria-label="" aria-describedby="inputGroup-sizing-sm" />
-            </div>
-            <div>
-                <p></p>
-            </div>
-        </form>
-    );
-}
 export default connect(
-    mapStateToProps,
+    null,
     mapDispatchToProps
 )(FromInputList);

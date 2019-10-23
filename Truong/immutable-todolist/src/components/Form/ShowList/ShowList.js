@@ -1,11 +1,13 @@
 import React from 'react';
 import List from './List/List';
 
-
-const ShowList = () => (
-  <List />
-)
-
-
-export default (ShowList);
+class ShowList extends React.Component {
+//const ShowList = () => (
+  render(){
+    return (
+      <List />
+    )
+  }
+}
+export default ShowList;
 

@@ -10,7 +10,7 @@ export const addToListSync = (action) => {
     return {
         type: types.addSync,
         name: action.name,
-        index: action.index
+        //index: action.index
     }
 }
 export const removeFromList = (index) => ({

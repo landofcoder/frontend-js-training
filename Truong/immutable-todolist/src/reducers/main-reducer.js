@@ -11,20 +11,20 @@ const defaultState = fromJS({
         {
             name: "Truong",
             date: new Date().toDateString(),
-            index: 1
+            //index: 1
         }
     ],
-    isLoading: true
+    isLoading: true,
 });
 
 const mainReducer = (state = defaultState, action) => {
     switch (action.type) {
         case types.add:
-            return state.setIn(['example2'], state.getIn(['example2']).push(Map({ name: action.name, date: new Date().toDateString(), index: action.index })));
+            return state.setIn(['example2'], state.getIn(['example2']).push(fromJS({ name: action.name, date: new Date().toDateString()/*, index: action.index */ })));
         case types.isLoading:
             return state.setIn(['isLoading'], !state.getIn(['isLoading']));
         case types.deleteList:
-            return state.setIn(['example2'], state.getIn(['example2']).delete(action.index - 1))
+            return state.setIn(['example2'], state.getIn(['example2']).delete(action.index));
         default:
             return state;
     }

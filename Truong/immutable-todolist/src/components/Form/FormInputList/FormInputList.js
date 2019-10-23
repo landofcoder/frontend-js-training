@@ -4,7 +4,7 @@ import { addToListSync } from '../../../actions/main-action'
 const mapStateToProps = state => ({
     getLength: state.getIn(['mainReducer', 'example2']).size + 1
 })
-const mapDispatchToPropos = (dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
     addToListSync: i => {
         return dispatch(addToListSync(i))
     }
@@ -32,5 +32,5 @@ const FromInputList = ({ getLength, addToListSync }) => {
 }
 export default connect(
     mapStateToProps,
-    mapDispatchToPropos
+    mapDispatchToProps
 )(FromInputList);

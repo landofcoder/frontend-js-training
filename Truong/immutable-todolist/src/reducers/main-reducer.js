@@ -1,4 +1,4 @@
-import {fromJS,Map} from 'immutable';
+import { fromJS, Map } from 'immutable';
 import * as types from '../constants/index';
 
 const defaultState = fromJS({
@@ -11,24 +11,21 @@ const defaultState = fromJS({
         {
             name: "Truong",
             date: new Date().toDateString(),
-            index : 1
+            index: 1
         }
     ],
-    isloading : true
+    isLoading: true
 });
 
 const mainReducer = (state = defaultState, action) => {
-    console.log("go switch action.type");
-    console.log(action);
     switch (action.type) {
-        case types.ADD:
-            return state.setIn(['example2'],state.getIn(['example2']).push(Map({name: action.name,date: new Date().toDateString(),index: action.index})));
-        case types.isloading:
-            return state.setIn(['isloading'],!state.getIn(['isloading']));
-        case types.DELETE:
-            return state.setIn(['example2'],state.getIn(['example2']).delete(action.index - 1))
+        case types.add:
+            return state.setIn(['example2'], state.getIn(['example2']).push(Map({ name: action.name, date: new Date().toDateString(), index: action.index })));
+        case types.isLoading:
+            return state.setIn(['isLoading'], !state.getIn(['isLoading']));
+        case types.deleteList:
+            return state.setIn(['example2'], state.getIn(['example2']).delete(action.index - 1))
         default:
-            console.log("action.type is undefined");
             return state;
     }
 };

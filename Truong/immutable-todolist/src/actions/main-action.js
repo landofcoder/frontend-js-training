@@ -1,22 +1,22 @@
 import * as types from '../constants';
 
-export const AddtoList = (name) =>
-({
-    type: types.ADD,
-    name: name.name,
-    index: name.index
-})
-export function AddtoList_SYNC(name){
+export const addToList = (action) =>
+    ({
+        type: types.add,
+        name: action.name,
+        index: action.index
+    })
+export const addToListSync = (action) => {
     return {
-        type: types.ADD_SYNC,
-        name: name.name,
-        index: name.index
+        type: types.addSync,
+        name: action.name,
+        index: action.index
     }
 }
-export const RemovefromList = (index) => ({
-    type: types.DELETE,
+export const removeFromList = (index) => ({
+    type: types.deleteList,
     index
 })
-export const changeloading = () => ({
-    type: types.isloading
+export const changeLoading = () => ({
+    type: types.isLoading
 })

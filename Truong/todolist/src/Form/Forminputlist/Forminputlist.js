@@ -1,14 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
-const addparameter = (i) => ({
+const addParameter = (i) => ({
   type: 'create',
   createName: i
 })
 const mapDispatchToPropos = (dispatch) =>({
-  add: i => {dispatch(addparameter(i))}
+  add: i => {dispatch(addParameter(i))}
 })
-const Forminputlist = ({add}) => {
+const FormInputList = ({add}) => {
   let input;
   return(
   <form className="bgform" onSubmit={
@@ -28,4 +28,4 @@ const Forminputlist = ({add}) => {
 export default connect(
   null,
   mapDispatchToPropos
-)(Forminputlist);
+)(FormInputList);

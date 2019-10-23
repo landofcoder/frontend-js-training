@@ -2,10 +2,10 @@ import React from 'react';
 import List from './List/List';
 
 
-const Showlist = () => (
+const ShowList = () => (
   <List />
 )
 
 
-export default (Showlist);
+export default (ShowList);
 

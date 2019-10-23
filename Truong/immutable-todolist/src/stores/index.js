@@ -2,7 +2,7 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { createBrowserHistory } from 'history';
 import createRootReducer from '../reducers';
 import createSagaMiddleware from 'redux-saga';
-import rootSaga from '../sagas';
+import rootSaga from '../sagas/root-saga';
 import { Iterable } from 'immutable';
 import { routerMiddleware } from 'connected-react-router/immutable';
 

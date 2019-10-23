@@ -1,4 +1,4 @@
-export const ADD = "ADD_LIST";
-export const DELETE = "DELETE_LIST";
-export const isloading = "CHANGE_LOADING"
-export const ADD_SYNC = "ADD_LIST_SYNC";
+export const add = "ADD_LIST";
+export const deleteList = "DELETE_LIST";
+export const isLoading = "CHANGE_LOADING"
+export const addSync = "ADD_LIST_SYNC";

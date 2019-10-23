@@ -1,10 +1,14 @@
 import * as types from '../constants';
 
-export function AddtoList(name){
-    console.log("get index in to a function AddtoList");
-    console.log(name.index);
+export const AddtoList = (name) =>
+({
+    type: types.ADD,
+    name: name.name,
+    index: name.index
+})
+export function AddtoList_SYNC(name){
     return {
-        type: types.ADD,
+        type: types.ADD_SYNC,
         name: name.name,
         index: name.index
     }

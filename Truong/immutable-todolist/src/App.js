@@ -19,9 +19,10 @@ class App extends Component {
     render(){
       console.log("re-render");
       console.log(this.props.isloading);
-      return(
-          this.props.isloading?<INTRO />:<Main />
-      )
+      if(this.props.isloading)
+        return <INTRO />
+      else
+        return <Main />
     }
 }
 export default connect(mapStateToProps,mapDispatchToProps)(App);

@@ -18,6 +18,8 @@ const defaultState = fromJS({
 });
 
 const mainReducer = (state = defaultState, action) => {
+    console.log("go switch action.type");
+    console.log(action);
     switch (action.type) {
         case types.ADD:
             return state.setIn(['example2'],state.getIn(['example2']).push(Map({name: action.name,date: new Date().toDateString(),index: action.index})));
@@ -26,6 +28,7 @@ const mainReducer = (state = defaultState, action) => {
         case types.DELETE:
             return state.setIn(['example2'],state.getIn(['example2']).delete(action.index - 1))
         default:
+            console.log("action.type is undefined");
             return state;
     }
 };

@@ -1,4 +1,4 @@
-import {takeEvery, put} from "redux-saga/effects";
+import {takeEvery, put, call} from "redux-saga/effects";
 import * as types from '../constants/index';
 import {checkDiscountProcessService,} from './service';
 
